@@ -1,0 +1,117 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.freshlancers.sws"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //fire base
+    implementation 'com.android.support:support-v4:27.0.2'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.google.firebase:firebase-core:11.8.0'
+
+    //bottom navigation view
+    compile 'com.github.ittianyu:BottomNavigationViewEx:1.2.4'
+
+    //badge for bottom navigation view
+    compile 'q.rorbin:badgeview:1.1.0'
+
+    //Infinite View Pager with indicator
+    compile 'com.github.hanihashemi:InfiniteViewPagerWithIndicator:1.1.8'
+
+    //circular image view
+    compile 'com.jackandphantom.android:circularimageview:1.2.0'
+
+    //image loading library
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    //CoverFlow
+    compile 'com.github.crosswall:Android-Coverflow:release-v1.0.4'
+
+    //time ago
+    compile 'com.github.marlonlom:timeago:3.0.1'
+
+    //to detect memory leak
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //Glide image loading
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+
+    //dependency Injection
+    compile 'com.google.dagger:dagger-android:2.13'
+    compile 'com.google.dagger:dagger-android-support:2.13'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.13'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.13'
+
+    //generate boiler plate
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Cardinal Now circular progress bar
+    compile 'com.github.CardinalNow:Android-CircleProgressIndicator:v0.2'
+
+    //JustifiedTextView
+    compile 'me.biubiubiu.justifytext:library:1.1'
+
+    //Retrofit RxJava Gson
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.7'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    //material spinner
+    compile 'com.jaredrummler:material-spinner:1.2.4'
+
+    //circular Progressbar
+    compile 'com.github.CardinalNow:Android-CircleProgressIndicator:v0.2'
+
+    //Timber is a lightweight library to write logs
+    compile 'com.jakewharton.timber:timber:4.6.0'
+
+    //WeekScroller
+    compile 'devs.mulham.horizontalcalendar:horizontalcalendar:1.2.5'
+
+    //calendar view
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+
+    //time and date handling library
+    compile 'net.danlew:android.joda:2.9.9.1'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

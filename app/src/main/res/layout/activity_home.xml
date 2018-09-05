@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    tools:context=".ui.activities.home.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/relLayoutParent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp">
+
+                    <me.crosswall.lib.coverflow.core.PagerContainer
+                        android:id="@+id/pager_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.antonyt.infiniteviewpager.InfiniteViewPager
+                            android:id="@+id/pager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true" />
+                        <!--<android.support.v4.view.ViewPager-->
+                            <!--android:id="@+id/pager"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_alignParentTop="true" />-->
+
+                    </me.crosswall.lib.coverflow.core.PagerContainer>
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_alignParentBottom="true"
+                            app:ci_drawable="@drawable/indicator_selected"
+                            app:ci_drawable_unselected="@drawable/indicator" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relLayout2"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/calender"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:id="@+id/calenderRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_calender"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_calendar" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_calender"
+                                android:text="@string/calender"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/assignment"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:id="@+id/assignmentRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_assignment"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_assignments" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_assignment"
+                                android:text="@string/assignments"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayout1"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/attendanceRelativeLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_attendance"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:padding="4dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_attendence" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_attendance"
+                                android:text="@string/attendance"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/mark_sheet"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:id="@+id/markSheetRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_marksheet"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:padding="4dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_marksheet" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_marksheet"
+                                android:text="@string/mark_sheet"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearlayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearlayout2"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/payment"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:id="@+id/paymentRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_payment"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_payment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_payment"
+                                android:text="@string/payment"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/events"
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:background="@drawable/card_view">
+
+                        <RelativeLayout
+                            android:id="@+id/eventsRelativeLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/ic_events"
+                                android:layout_width="66dp"
+                                android:layout_height="66dp"
+                                android:padding="8dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_events" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/ic_events"
+                                android:text="@string/events_news"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <include layout="@layout/layout_bottom_navigation_view" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

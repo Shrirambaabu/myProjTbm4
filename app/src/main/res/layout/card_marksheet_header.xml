@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/subject_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject"
+        android:padding="8dp"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/black_baby"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/marks_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/marks"
+        android:padding="8dp"
+        android:textColor="@color/black_baby"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/status_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/status"
+        android:padding="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/black_baby"
+        android:textSize="16sp" />
+
+</RelativeLayout>

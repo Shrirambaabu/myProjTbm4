@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SWS.iml" filepath="$PROJECT_DIR$/SWS.iml" />
+      <module fileurl="file://C:\Users\ADMIN\AndroidStudioProjects\SchoolWorklistSimpliedAndroid\SWS.iml" filepath="C:\Users\ADMIN\AndroidStudioProjects\SchoolWorklistSimpliedAndroid\SWS.iml" />
+      <module fileurl="file://D:\IntelliJ\android\SWS\.idea\SchoolWorklistSimpliedAndroid.iml" filepath="D:\IntelliJ\android\SWS\.idea\SchoolWorklistSimpliedAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

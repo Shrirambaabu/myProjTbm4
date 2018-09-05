@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">SWS</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="school_name">Sri Sevugamoorthy Matric School</string>
+    <string name="calender">Calender</string>
+    <string name="assignments">Assignments</string>
+    <string name="attendance">Attendance</string>
+    <string name="mark_sheet">Mark Sheet</string>
+    <string name="payment">Payment</string>
+    <string name="roll_no">Roll No</string>
+    <string name="mo1787">MO1787</string>
+    <string name="classes">Class</string>
+    <string name="student_name">Student Name</string>
+    <string name="father_mother">Father/Mother</string>
+    <string name="address">Address</string>
+    <string name="class_teacher">Class Teacher</string>
+    <string name="contact_no">Contact No</string>
+    <string name="change_password">Change Password</string>
+    <string name="logout">Logout</string>
+    <string name="no_notification_msg">You don\'t have any \n Notification</string>
+    <string name="events_news">Events/News</string>
+    <string name="place">Place:</string>
+    <string name="you_have_no_events_news">You have no events/news</string>
+    <string name="description">Description</string>
+    <string name="april_5_2017">April 5, 2017</string>
+    <string name="events_name">Events Name</string>
+    <string name="school_auditorium">School Auditorium</string>
+    <string name="lipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="percentage">Percentage</string>
+    <string name="grade">Grade</string>
+    <string name="please_select_exam_type">Please Select Exam Type</string>
+    <string name="subject">Subject</string>
+    <string name="marks">Marks</string>
+    <string name="status">Status</string>
+    <string name="pass">Pass</string>
+    <string name="select_exam_type">-- Select Exam Type --</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="current">Current</string>
+    <string name="history">History</string>
+    <string name="you_have_no_outstanding_payment_at_the_moment">You have no outstanding payment at the moment</string>
+    <string name="done">Done</string>
+    <string name="assignment">Assignment</string>
+    <string name="you_have_no_assignments">You have no Assignments</string>
+    <string name="attachment">Attachment</string>
+    <string name="assignmentName">assignmentName</string>
+    <string name="assignmentSubject">assignmentSubject</string>
+    <string name="date">date</string>
+    <string name="month">month</string>
+    <string name="docs">Docs</string>
+    <string name="your_calender_is_empty">Your Calender is empty</string>
+    <string name="calendar">Calendar</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="excuse">Excuse</string>
+    <string name="leave">Leaves</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="not_a_valid_username">Not a valid username!</string>
+    <string name="not_a_valid_password">Not a valid password!</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="password_didnt_match">Password didn\'t Match</string>
+    <string name="password_wrong">Password wrong</string>
+    <string name="confirm_password_reset">You have Successfully Changed password.Please use your new Password when Logging in.</string>
+    <string name="successful">Successful</string>
+    <string name="old_password">Old Password</string>
+    <string name="late">Late</string>
+    <string name="due">Due</string>
+
+    <string-array name="custom_weekdays">
+        <item>S</item>
+        <item>M</item>
+        <item>T</item>
+        <item>W</item>
+        <item>T</item>
+        <item>F</item>
+        <item>S</item>
+    </string-array>
+
+</resources>

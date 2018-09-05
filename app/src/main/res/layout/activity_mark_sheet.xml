@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/background"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.activities.markSheet.MarkSheetActivity">
+
+    <RelativeLayout
+        android:id="@+id/relLayoutParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/relLayoutParent2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@android:color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:background="@drawable/spinner_border">
+
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/examTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="46dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginStart="4dp"
+                            android:background="@drawable/spinner_border"
+                            android:textSize="16sp"
+                            app:ms_arrow_tint="@android:color/background_dark"
+                            app:ms_background_color="@android:color/white"
+                            app:ms_hide_arrow="false"
+                            app:ms_text_color="@color/black_baby" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relLayout2"
+                    android:background="@android:color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="8dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/percentage_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:padding="8dp"
+                                android:text="@string/percentage"
+                                android:textColor="@color/black_baby"
+                                android:textSize="18sp" />
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_below="@id/percentage_text"
+                                android:layout_centerInParent="true"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="100"
+                                android:progressDrawable="@drawable/circle_progress_background" />
+
+                            <ProgressBar
+                                android:id="@+id/percentageBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_below="@id/percentage_text"
+                                android:layout_centerInParent="true"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progressDrawable="@drawable/circle_progress_foreground"
+                                android:rotation="-90" />
+
+                            <TextView
+                                android:id="@+id/percentage_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/percentage_text"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                android:textColor="@color/result"
+                                android:textSize="24sp" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/grade_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:padding="8dp"
+                                android:text="@string/grade"
+                                android:textColor="@color/black_baby"
+                                android:textSize="18sp" />
+
+                            <ProgressBar
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_below="@id/grade_text"
+                                android:layout_centerHorizontal="true"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progress="100"
+                                android:progressDrawable="@drawable/circle_grade_background" />
+
+                            <ProgressBar
+                                android:id="@+id/gradeBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_below="@id/grade_text"
+                                android:layout_centerHorizontal="true"
+                                android:indeterminate="false"
+                                android:max="100"
+                                android:progressDrawable="@drawable/circle_grade_foreground"
+                                android:rotation="-90" />
+
+                            <TextView
+                                android:id="@+id/grade_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/grade_text"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                android:textColor="@color/result"
+                                android:textSize="24sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relLayout3"
+                    android:layout_marginBottom="16dp">
+
+                    <include layout="@layout/layout_empty_recycler_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/relLayout2"
+                    android:layout_marginTop="8dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:padding="8dp"
+                        android:text="@string/please_select_exam_type"
+                        android:textColor="@color/black_baby"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <include layout="@layout/layout_bottom_navigation_view" />
+
+    </RelativeLayout>
+
+</LinearLayout>

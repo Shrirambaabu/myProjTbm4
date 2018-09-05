@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.freshlancers.sws">
+
+    <application
+        android:name=".SwsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.activities.home.HomeActivity"
+            android:label="@string/school_name" />
+        <activity
+            android:name=".ui.activities.profile.ProfileActivity"
+            android:label="@string/profile" />
+        <activity
+            android:name=".ui.activities.notification.NotificationActivity"
+            android:label="@string/notification" />
+        <activity
+            android:name=".ui.activities.noNotification.NoNotificationActivity"
+            android:label=""
+            android:theme="@style/Theme.AppCompat.Translucent" />
+        <activity
+            android:name=".ui.activities.events.EventsActivity"
+            android:label="@string/events_news" />
+        <activity
+            android:name=".ui.activities.eventDetails.EventDetailsActivity"
+            android:label="@string/events_news" />
+        <activity
+            android:name=".ui.activities.markSheet.MarkSheetActivity"
+            android:label="@string/mark_sheet" />
+        <activity
+            android:name=".ui.activities.payment.PaymentActivity"
+            android:label="@string/payment" />
+        <activity
+            android:name=".ui.activities.assignment.AssignmentActivity"
+            android:label="@string/assignment" />
+        <activity
+            android:name=".ui.activities.assignmentDetail.AssignmentDetailsActivity"
+            android:label="@string/assignment" />
+        <activity
+            android:name=".ui.activities.calender.CalendarActivity"
+            android:label="@string/calendar" />
+        <activity
+            android:name=".ui.activities.attendance.AttendanceActivity"
+            android:label="@string/attendance" />
+        <activity
+            android:name=".ui.activities.login.LoginActivity"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.forgotPassword.ForgotPasswordActivity"
+            android:label="@string/change_password"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.activities.forgotPasswordSuccess.ForgotPasswordSuccessActivity"
+            android:theme="@style/AppThemeNoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+    </application>
+
+</manifest>
